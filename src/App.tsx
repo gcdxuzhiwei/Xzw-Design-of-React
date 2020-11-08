@@ -4,7 +4,7 @@ import Button, { ButtonSize, ButtonType } from "./components/Button/Button";
 function App() {
   return (
     <div className="App">
-      <Button>hello</Button>
+      <Button className="claa">hello</Button>
       <Button btnType={ButtonType.Primary} size={ButtonSize.Large}>
         hello
       </Button>
@@ -14,7 +14,11 @@ function App() {
       <Button btnType={ButtonType.Primary} size={ButtonSize.Small}>
         hello
       </Button>
-      <Button btnType={ButtonType.Link} href="https://www.baidu.com">
+      <Button
+        btnType={ButtonType.Link}
+        href="https://www.baidu.com"
+        target="_blank"
+      >
         hello
       </Button>
       <Button btnType={ButtonType.Link} disabled href="https://www.baidu.com">
